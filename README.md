@@ -16,7 +16,6 @@ class Example extends Model
     use Chenfeizhou\ModelBatch\Model\Concerns\ModelBathInsertTrait;
 }
 
-// 创建工单
 $data = [
     [
       'name' => 'zhangsan',
