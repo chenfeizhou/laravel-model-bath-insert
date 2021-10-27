@@ -1,0 +1,19 @@
+{
+    "name": "chenfeizhou/laravel-model-batch-insert",
+    "description": "Laravel 模型批量插入",
+    "type": "lib",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chenfeizhou",
+            "email": "1114526565@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Chenfeizhou\\ModelBatch\\": "src/"
+        }
+    },
+    "require": {}
+}
