@@ -1,5 +1,5 @@
 # laravel-model-batch-insert
-Laravel 模型批量插入
+Laravel 模型数据批量插入
 
 ### 使用指南
 
