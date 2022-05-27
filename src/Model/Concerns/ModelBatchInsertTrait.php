@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\DB;
 
 trait ModelBatchInsertTrait
 {
-    public static function batchInsert(array $data)
+    public static function batchInsert(array $data, array $pks = [])
     {
         set_time_limit(0);
         ini_set('memory_limit', -1);
@@ -23,7 +23,7 @@ trait ModelBatchInsertTrait
 
                 $chunkData = array_slice($result, $offset, $limit);
 
-                DB::connection($this->connection_db)->table($this->table_name)->insert($chunkData);
+                DB::connection($this->connection_db)->table($this->table_name)->upsert($chunkData, $pks);
             });
         }
     }
